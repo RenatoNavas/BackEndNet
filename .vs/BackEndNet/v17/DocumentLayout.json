@@ -1,0 +1,53 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\renat\\Documents\\MATHIAS\\TRABAJO\\PruebaTecnica\\BackEndNet\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{379E4A3D-ABAA-4721-8337-97E27468AEDC}|BackEndNet\\BackEndNet.csproj|c:\\users\\renat\\documents\\mathias\\trabajo\\pruebatecnica\\backendnet\\backendnet\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{379E4A3D-ABAA-4721-8337-97E27468AEDC}|BackEndNet\\BackEndNet.csproj|solutionrelative:backendnet\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{379E4A3D-ABAA-4721-8337-97E27468AEDC}|BackEndNet\\BackEndNet.csproj|c:\\users\\renat\\documents\\mathias\\trabajo\\pruebatecnica\\backendnet\\backendnet\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{379E4A3D-ABAA-4721-8337-97E27468AEDC}|BackEndNet\\BackEndNet.csproj|solutionrelative:backendnet\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "WeatherForecastController.cs",
+              "DocumentMoniker": "C:\\Users\\renat\\Documents\\MATHIAS\\TRABAJO\\PruebaTecnica\\BackEndNet\\BackEndNet\\Controllers\\WeatherForecastController.cs",
+              "RelativeDocumentMoniker": "BackEndNet\\Controllers\\WeatherForecastController.cs",
+              "ToolTip": "C:\\Users\\renat\\Documents\\MATHIAS\\TRABAJO\\PruebaTecnica\\BackEndNet\\BackEndNet\\Controllers\\WeatherForecastController.cs",
+              "RelativeToolTip": "BackEndNet\\Controllers\\WeatherForecastController.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAA+wAoAAABSAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-30T21:26:56.696Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "WeatherForecast.cs",
+              "DocumentMoniker": "C:\\Users\\renat\\Documents\\MATHIAS\\TRABAJO\\PruebaTecnica\\BackEndNet\\BackEndNet\\WeatherForecast.cs",
+              "RelativeDocumentMoniker": "BackEndNet\\WeatherForecast.cs",
+              "ToolTip": "C:\\Users\\renat\\Documents\\MATHIAS\\TRABAJO\\PruebaTecnica\\BackEndNet\\BackEndNet\\WeatherForecast.cs",
+              "RelativeToolTip": "BackEndNet\\WeatherForecast.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-30T21:26:54.133Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
