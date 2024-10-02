@@ -1,3 +1,6 @@
+using BackEndNet.Data;
+using Microsoft.EntityFrameworkCore;
+
 namespace BackEndNet
 {
     public class Program
@@ -9,6 +12,11 @@ namespace BackEndNet
             // Add services to the container.
 
             builder.Services.AddControllers();
+            builder.Services.AddDbContext<AppDbContext>(o =>
+            {
+                o.UseNpgsql(builder.Configuration.GetConnectionString("StoreDatabase"));
+            });
+
 
             var app = builder.Build();
 
