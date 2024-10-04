@@ -18,5 +18,7 @@ namespace BackEndNet.Data
         }
 
         public DbSet<Producto> Productos { get; set; }
+
+        public DbSet<Bodega> Bodegas { get; set; }
     }
 }

@@ -3,6 +3,7 @@ using System;
 using BackEndNet.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
@@ -11,9 +12,11 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace BackEndNet.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    partial class AppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20241004124328_Bodega")]
+    partial class Bodega
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -51,9 +54,6 @@ namespace BackEndNet.Migrations
 
                     NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
 
-                    b.Property<int>("BodegaId")
-                        .HasColumnType("integer");
-
                     b.Property<DateTime>("FechaIngreso")
                         .HasColumnType("timestamp with time zone");
 
@@ -69,25 +69,7 @@ namespace BackEndNet.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("BodegaId");
-
                     b.ToTable("Productos");
-                });
-
-            modelBuilder.Entity("BackEndNet.Data.Producto", b =>
-                {
-                    b.HasOne("BackEndNet.Data.Bodega", "Bodega")
-                        .WithMany("Productos")
-                        .HasForeignKey("BodegaId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Bodega");
-                });
-
-            modelBuilder.Entity("BackEndNet.Data.Bodega", b =>
-                {
-                    b.Navigation("Productos");
                 });
 #pragma warning restore 612, 618
         }

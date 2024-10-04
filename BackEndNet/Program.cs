@@ -17,12 +17,24 @@ namespace BackEndNet
                 o.UseNpgsql(builder.Configuration.GetConnectionString("StoreDatabase"));
             });
 
+            builder.Services.AddCors(options =>
+            {
+                options.AddPolicy("AllowAngularApp",
+                    builder =>
+                    {
+                        builder.WithOrigins("http://localhost:4200")
+                               .AllowAnyHeader()
+                               .AllowAnyMethod();
+                    });
+            });
 
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.
 
             //Prueba commit
+            app.UseCors("AllowAngularApp");
+
 
             app.UseAuthorization();
 
